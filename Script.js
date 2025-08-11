@@ -100,10 +100,13 @@
         //clears all the data stored in the local storage
         function cleardata()
         {
-             localStorage.setItem("transportm","0");
-             localStorage.setItem("foodm","0");
-             localStorage.setItem("necessitiesm","0");
-             localStorage.setItem("items","0");
-             localStorage.setItem("usables","0");
-             localStorage.setItem("permanents","0");
+            if (localStorage.getItem("transportm")==null)
+            {
+                localStorage.setItem("transportm","0");
+                localStorage.setItem("foodm","0");
+                localStorage.setItem("necessitiesm","0");
+                localStorage.setItem("items","0");
+                localStorage.setItem("usables","0");
+                localStorage.setItem("permanents","0");
+            }
         }
