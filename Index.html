@@ -5,22 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./Style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=
+Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&
+family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <script src="./Script.js"></script>
 
     <h1>Finance Tracker</h1>
     <!-- Adds the data to the finance tracker -->
-    <div>
-        <form id="financeForm">
-            <input type="text" placeholder="Enter amount to add" id="amount">
-            <select id="typeOfOperation">
+    <div  id="financeForm">
+        <form>
+            <input type="text" placeholder="Enter amount to add" id="amount"><br>
+            <select id="typeOfOperation" class="category_select">
                 <option value="" disabled selected>Add or subtract money?</option>
                 <option value="+">Add Money</option>
                 <option value="-">Remove Money</option>
 
             </select>
-            <select id="category">
+            <select id="category" class="category_select">
                 <option value="" disabled selected>Select Category</option>
                 <option value="psave">Permanent Savings</option>
                 <option value="usave">Usable Savings</option>
@@ -28,16 +36,15 @@
                 <option value="food">Food</option>
                 <option value="necessities">Necessities</option>
                 <option value="items">Physical things bought</option>
-            </select>
-            <button onclick="disappointmentlook()">Submit</button>
+            </select><br>
+            <button onclick="disappointmentlook()" id="submitBtn">Submit</button><br>
+            <!-- <button onclick="cleardata()">Clear all data</button>  -->
         </form>
     </div>
 
-    <button onclick="cleardata()">Clear all data</button>
-
     <!-- Data output -->
     <div>
-        <table border="1" caption>
+        <table  class="output_table">
             <caption>Money spent</caption>
             <thread>
                 <tr>
@@ -74,7 +81,7 @@
         </table>
     </div>
     <div>
-        <table border="1">
+        <table  class="output_table">
             <caption>Money Saved</caption>
             <thead>
                 <tr>

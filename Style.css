@@ -1,0 +1,66 @@
+body{
+    font-family:Roboto;
+    background-color: rgb(196, 202, 208);
+}
+h1{
+    text-align: center;
+    font-family: Poppins;
+    font-size: 3rem;  
+    margin-bottom: 0.2rem;  
+    text-decoration: underline;
+}
+
+#financeForm{
+    text-align: center;
+}
+
+.output_table{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#amount
+{
+    border: none;
+    background-color: rgb(172, 177, 181);
+    width: 30rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+
+}
+.category_select
+{
+    height: 2.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgb(172, 177, 181);
+    border: none;
+    border-radius: 0.5rem;
+
+}
+#submitBtn
+{
+    height: 2.5rem;
+    width: 9rem;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    background-color: rgb(83, 172, 135);
+    border: none;
+    border-radius: 0.5rem;
+}
+th,td {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+
+
+}
+th{
+    background-color: rgb(172, 177, 181);
+}
+caption{
+    font-size: 1.5rem;
+}
