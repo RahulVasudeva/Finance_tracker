@@ -1,6 +1,7 @@
 body{
     font-family:Roboto;
     background-color: rgb(196, 202, 208);
+    color: black;
 }
 h1{
     text-align: center;
@@ -40,6 +41,7 @@ h1{
     background-color: rgb(172, 177, 181);
     border: none;
     border-radius: 0.5rem;
+    color: black;
 
 }
 #submitBtn
@@ -51,6 +53,7 @@ h1{
     background-color: rgb(83, 172, 135);
     border: none;
     border-radius: 0.5rem;
+    color: black;
 }
 th,td {
     padding: 0.5rem;
@@ -63,4 +66,16 @@ th{
 }
 caption{
     font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #amount {
+        width: 20rem;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.2rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
 }
