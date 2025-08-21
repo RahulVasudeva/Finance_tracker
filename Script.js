@@ -116,4 +116,11 @@
                 localStorage.setItem("usables","0");
                 localStorage.setItem("permanents","0");
             }
+            document.getElementById("transportationMoney").innerHTML=localStorage.getItem("transportm")+ " INR";
+            document.getElementById("foodMoney").innerHTML=localStorage.getItem("foodm")+ " INR";
+            document.getElementById("necessMoney").innerHTML=localStorage.getItem("necessitiesm")+ " INR";
+            document.getElementById("itemsMoney").innerHTML=localStorage.getItem("items")+ " INR";
+            document.getElementById("psave").innerHTML=localStorage.getItem("permanents")+ " INR";
+            document.getElementById("usave").innerHTML=localStorage.getItem("usables")+ " INR";
+            document.getElementById("totalAmt").innerHTML=localStorage.getItem("totalMoneyUsed")+ " INR";
         }
