@@ -24,8 +24,9 @@ family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Adds the data to the finance tracker -->
     <div  id="financeForm">
         <form>
-            <input type="text" placeholder="Enter amount to add" id="amount"><br>
-            <p id="error_message"></p>
+            <div class="input_txt">
+            <input type="text" placeholder="Enter amount to add" id="amount">
+            <p id="error_message"></p></div>
             <select id="typeOfOperation" class="category_select">
                 <option value="" disabled selected>Add or subtract money?</option>
                 <option value="+">Add Money</option>
@@ -47,7 +48,7 @@ family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </div>
 
     <!-- Data output -->
-    <div>
+    <div id="out">
         <table  class="output_table">
             <caption>Money spent</caption>
             <thread>
@@ -83,8 +84,6 @@ family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
             
             </tr>
         </table>
-    </div>
-    <div>
         <table  class="output_table">
             <caption>Money Saved</caption>
             <thead>
