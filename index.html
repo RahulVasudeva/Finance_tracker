@@ -25,7 +25,10 @@ family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <div  id="financeForm">
         <form>
             <div class="input_txt">
+                <div class="text-box">
             <input type="text" placeholder="Enter amount to add" id="amount">
+            <button onclick="disappointmentlook()" id="submitBtn">Submit</button></div>
+
             <p id="error_message"></p></div>
             <select id="typeOfOperation" class="category_select">
                 <option value="" disabled selected>Add or subtract money?</option>
@@ -42,7 +45,6 @@ family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
                 <option value="necessities">Necessities</option>
                 <option value="items">Physical things bought</option>
             </select><br>
-            <button onclick="disappointmentlook()" id="submitBtn">Submit</button><br>
             <!-- <button onclick="cleardata()">Clear all data</button>  -->
         </form>
     </div>
