@@ -29,18 +29,17 @@ h1{
 }
 .output_table{
     /* margin-left: auto;
-    margin-right: auto; */
-    font-size: 1.2rem;
-    /* justify-content: center; */
+    margin-right: auto;  */
+    font-size: 1.2rem; 
     flex: 1 1 auto;
-    align-items: stretch;
+    /* max-width: 600px; */
     
 }
 #out {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    /* align-items:flex-start; */
+    justify-content: center;
+    /* align-items: center;  */
     gap: 8px;
     flex-wrap: wrap;
 }
